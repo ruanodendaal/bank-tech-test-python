@@ -16,5 +16,6 @@ class TestAccount(unittest.TestCase):
         self.account.deposit(50)
         self.assertEqual(self.account.get_balance(), 150)
 
-if __name__ == '__main__':
-    unittest.main()
+    def test_withdrawl(self):
+        self.account.withdraw(20)
+        self.assertEqual(self.account.get_balance(), 80)
