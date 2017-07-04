@@ -9,5 +9,8 @@ class TestAccount(unittest.TestCase):
     def test_default_options_set(self):
         self.assertEquals(self.account.balance, 100)
 
+    def test_balance(self):
+        self.assertEquals(self.account.balance(), 100)
+
 if __name__ == '__main__':
     unittest.main()
