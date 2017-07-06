@@ -8,6 +8,7 @@ class TestAccount(unittest.TestCase):
 
     def test_default_options_set(self):
         self.assertEqual(self.account.balance, 100)
+        self.assertTrue(self.account.statement.summary)
 
     def test_balance(self):
         self.assertEqual(self.account.get_balance(), 100)
