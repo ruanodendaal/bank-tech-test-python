@@ -13,12 +13,12 @@ class Account:
     def deposit(self, amount):
         self.balance += amount
         transaction = Transaction(amount, self.balance)
-        update_statement(self, transaction)
+        self.update_statement(transaction)
 
     def withdraw(self, amount):
         self.balance -= amount
         transaction = Transaction(-amount, self.balance)
-        update_statement(self, transaction)
+        self.update_statement(transaction)
 
-def update_statement(self, transaction):
-    self.statement.summary.append(transaction)
+    def update_statement(self, transaction):
+        self.statement.summary.append(transaction)
