@@ -7,6 +7,6 @@ class TestFeature(unittest.TestCase):
         self.account = Account(100)
 
     def test_print(self):
-        output = "date || credit || debit || balance\n 06/07/2017 || 50 ||  || 150\n"
+        output = "date || credit || debit || balance\n06/07/2017 || 50 ||  || 150\n"
         self.account.deposit(50)
         self.assertEqual(self.account.statement.print_statement(), output)
