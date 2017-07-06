@@ -48,3 +48,17 @@ date || credit || debit || balance
 ```
 
 ### Instructions
+Open your terminal and type `python`
+Then follow the below:
+```python
+from lib import Account
+account = Account()
+account.deposit(1000)
+account.deposit(2000)
+account.withdraw(500)
+print account.statement.print_statement()
+date || credit || debit || balance
+06/07/2017 ||  || 500 || 2500
+06/07/2017 || 2000 ||  || 3000
+06/07/2017 || 1000 ||  || 1000
+```
