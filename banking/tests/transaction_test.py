@@ -1,7 +1,7 @@
 import unittest
 from transaction import Transaction
 
-class TestAccount(unittest.TestCase):
+class TestTransaction(unittest.TestCase):
 
     def setUp(self):
         self.transaction = Transaction(100, 150)
